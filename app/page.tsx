@@ -27,9 +27,16 @@ export default function Page() {
       title: "Company Website, Dashboard, and CMS",
       description:
         "Hello Ada is a company website for a client. Leveraged Webflow and Xano to rapidly deliver a complete system—website, dashboard, and CMS.",
-      image: "/projects/hello2.png", // Add your project screenshot
+      image: "/projects/hello3.png", // Add your project screenshot
       techStack: ["JavaScript", "Webflow", "Wized", "Xano"],
       demo: "https://www.helloada.ai/en/eng", // Optional
+    },
+    {
+      title: "Mobile App for Chefs Collaboration",
+      description:
+        'MVP for <a href="https://www.linkedin.com/company/thisisremi/" target="_blank" rel="noopener noreferrer" class="text-neutral-700 dark:text-neutral-300 hover:text-blue-500 dark:hover:text-blue-400">Remi</a>',
+      image: "/projects/remi1.png", // Add your project screenshot
+      techStack: ["React Native", "TypeScript"],
     },
     {
       title: "React Shopping Website",
@@ -45,9 +52,9 @@ export default function Page() {
     <section>
       <a href={socialLinks.linkedin} target="_blank">
         <Image
-          src="/profile.png"
+          src="/profile_yu.png"
           alt="Profile photo"
-          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
+          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 hover:scale-105 transition-all duration-300"
           unoptimized
           width={160}
           height={160}

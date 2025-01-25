@@ -35,14 +35,15 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                   alt={project.title}
                   width={600}
                   height={400}
-                  className="w-full h-64 lg:h-full object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
               <div className="lg:w-1/2 p-8">
                 <h3 className="text-xl font-medium mb-3">{project.title}</h3>
-                <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-                  {project.description}
-                </p>
+                <p
+                  className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: project.description }}
+                />
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.techStack.map((tech, i) => (
                     <span
