@@ -1,10 +1,49 @@
 import Image from "next/image";
+import FeaturedProjects from "./components/FeaturedProjects";
 import { socialLinks } from "./config";
 
 export default function Page() {
+  // Featured projects data
+  const featuredProjects = [
+    {
+      title: "AI Chatbot for ESG Reporting",
+      description:
+        "a chatbot designed to answer customer questions regarding ESG regulations and reporting. It utilizes RAG architecture powered by LangChain and Pinecone.",
+      image: "/project1.png", // Add your project screenshot
+      techStack: ["Python", "Generative AI"],
+      github: "https://github.com/Staceypy/esg-chatbot",
+      demo: "https://demo-link.com", // Optional
+    },
+    {
+      title: "Desktop App Prompting Regular Standing and Moving Breaks",
+      description:
+        "An Electron app that reminds you to take breaks with customisable break duration.",
+      image: "/projects/break2.png", // Add your project screenshot
+      techStack: ["React", "Electron", "Node.js", "Typescript", "Webpack"],
+      github: "https://github.com/Staceypy/breaktimer-app",
+    },
+
+    {
+      title: "Company Website, Dashboard, and CMS",
+      description:
+        "Hello Ada is a company website for a client. Leveraged Webflow and Xano to rapidly deliver a complete system—website, dashboard, and CMS.",
+      image: "/projects/hello2.png", // Add your project screenshot
+      techStack: ["JavaScript", "Webflow", "Wized", "Xano"],
+      demo: "https://www.helloada.ai/en/eng", // Optional
+    },
+    {
+      title: "React Shopping Website",
+      description:
+        "A brief description of your project and what problem it solves.",
+      image: "/project2.png", // Add your project screenshot
+      techStack: ["React", "TypeScript", "Node.js"],
+      github: "https://github.com/Staceypy/shopping-website-react",
+    },
+  ];
+
   return (
     <section>
-      <a href={socialLinks.twitter} target="_blank">
+      <a href={socialLinks.linkedin} target="_blank">
         <Image
           src="/profile.png"
           alt="Profile photo"
@@ -15,51 +54,15 @@ export default function Page() {
           priority
         />
       </a>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Portfolio, made simple!
-      </h1>
+      <h1 className="mb-8 text-2xl font-medium tracking-tight">Yu Pei</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS.
-        </p>
-        <p>
-          Nextfolio has everything you need for a portfolio: MDX blog, SEO, RSS,
-          Atom & JSON feeds, analytics, Tweet & YouTube embeds, KaTeX and {""}
-          <a
-            target="_blank"
-            href="https://github.com/1msirius/Nextfolio?tab=readme-ov-file#features"
-          >
-            more
-          </a>
-          .
-        </p>
-        <p>
-          Nextfolio is{" "}
-          <a href={socialLinks.github} target="_blank">
-            open-source
-          </a>{" "}
-          and fully customizable, making it easy to add more features.
-        </p>
-        <p>
-          <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio"
-            target="_blank"
-          >
-            Deploy
-          </a>{" "}
-          your Nextfolio site with Vercel in minutes and follow the set up
-          instructions in the{" "}
-          <a href="/blog/getting-started">Getting Started</a> post.
-        </p>
-        <p>
-          Built and maintained by{" "}
-          <a href="https://imsirius.xyz/" target="_blank">
-            Sirius
-          </a>
-          .
+          Welcome to my portfolio! I am a junior software engineer with a
+          passion for building products that make a difference.
         </p>
       </div>
+
+      <FeaturedProjects projects={featuredProjects} />
     </section>
   );
 }
