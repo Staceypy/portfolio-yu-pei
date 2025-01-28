@@ -29,13 +29,17 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
             className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
           >
             <div className="flex flex-col lg:flex-row">
-              <div className="lg:w-1/2">
+              <div className="lg:w-1/2 min-h-[300px] flex items-center justify-center">
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-auto object-contain"
+                  width={800}
+                  height={800}
+                  className="w-full max-h-[500px] object-contain"
+                  style={{
+                    objectFit: "contain",
+                    maxWidth: "100%",
+                  }}
                 />
               </div>
               <div className="lg:w-1/2 p-8">

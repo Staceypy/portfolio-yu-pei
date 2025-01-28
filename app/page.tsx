@@ -6,14 +6,21 @@ export default function Page() {
   // Featured projects data
   const featuredProjects = [
     {
-      title: "AI Chatbot for ESG Reporting",
+      title: "AI Chatbot",
       description:
-        "a chatbot designed to answer customer questions regarding ESG regulations and reporting. It utilizes RAG architecture powered by LangChain and Pinecone.",
-      image: "/project1.png", // Add your project screenshot
-      techStack: ["Python", "Generative AI"],
-      github: "https://github.com/Staceypy/esg-chatbot",
-      demo: "https://demo-link.com", // Optional
+        "an End-to-End AI chatbot built using LangGraph, FastAPI, and Streamlit. support customizing overall conversation prompt",
+      image: "/projects/chatbot.png", // Add your project screenshot
+      techStack: ["Python", "Generative AI", "Streamlit", "FastAPI"],
+      github: "https://github.com/Staceypy/ai-chatbot-langgraph-streamlit",
     },
+    // {
+    //   title: "AI Chatbot for ESG Reporting",
+    //   description:
+    //     "a chatbot designed to answer customer questions regarding ESG regulations and reporting. It utilizes RAG architecture powered by LangChain and Pinecone.",
+    //   image: "/project1.png", // Add your project screenshot
+    //   techStack: ["Python", "Generative AI"],
+    //   github: "https://github.com/Staceypy/esg-chatbot",
+    // },
     {
       title: "Desktop App Prompting Regular Standing and Moving Breaks",
       description:
@@ -27,22 +34,22 @@ export default function Page() {
       title: "Company Website, Dashboard, and CMS",
       description:
         "Hello Ada is a company website for a client. Leveraged Webflow and Xano to rapidly deliver a complete system—website, dashboard, and CMS.",
-      image: "/projects/hello3.png", // Add your project screenshot
+      image: "/projects/hello3.png",
       techStack: ["JavaScript", "Webflow", "Wized", "Xano"],
-      demo: "https://www.helloada.ai/en/eng", // Optional
+      demo: "https://www.helloada.ai/en/eng",
     },
     {
       title: "Mobile App for Chefs Collaboration",
       description:
-        'MVP for <a href="https://www.linkedin.com/company/thisisremi/" target="_blank" rel="noopener noreferrer" class="text-neutral-700 dark:text-neutral-300 hover:text-blue-500 dark:hover:text-blue-400">Remi</a>',
-      image: "/projects/remi1.png", // Add your project screenshot
-      techStack: ["React Native", "TypeScript"],
+        'contributed in building prototype on Figma, and building mobile APP for <a href="https://www.linkedin.com/company/thisisremi/" target="_blank" rel="noopener noreferrer" class="text-neutral-700 dark:text-neutral-300 hover:text-blue-500 dark:hover:text-blue-400">Remi</a>',
+      image: "/projects/remi1.png",
+      techStack: ["React Native", "TypeScript", "Firebase"],
     },
     {
-      title: "React Shopping Website",
+      title: "T-Shirt E-Commerce Website",
       description:
-        "A brief description of your project and what problem it solves.",
-      image: "/project2.png", // Add your project screenshot
+        "A full-stack e-commerce web application built with React and express for T-shirt enthusiasts.",
+      image: "/projects/shopping-home.png",
       techStack: ["React", "TypeScript", "Node.js"],
       github: "https://github.com/Staceypy/shopping-website-react",
     },
@@ -64,8 +71,15 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-medium tracking-tight">Yu Pei</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Welcome to my portfolio! I am a junior software engineer with a
-          passion for building products that make a difference.
+          Welcome to my portfolio! I'm an emerging{" "}
+          <strong>full stack developer</strong>
+          passionate about building thoughtful digital experiences. With a
+          strong foundation in <strong>TypeScript</strong> and{" "}
+          <strong>Python</strong>, I craft solutions using modern frameworks
+          like <strong>React</strong>, <strong>Angular</strong>,{" "}
+          <strong>NestJs</strong>. Currently completing my studies, I combine
+          these technical skills with user-centered design principles to develop
+          applications that are both powerful and intuitive to use
         </p>
       </div>
 
