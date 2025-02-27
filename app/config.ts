@@ -9,6 +9,6 @@ export const metaData = {
 
 export const socialLinks = {
   github: "https://github.com/Staceypy",
-  linkedin: "https://www.linkedin.com/in/yu-pei-108a48271/",
+  linkedin: "https://www.linkedin.com/in/yu--pei/",
   email: "yu.pei00q@gmail.com",
 };

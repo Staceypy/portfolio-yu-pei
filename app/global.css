@@ -40,13 +40,13 @@
 }
 
 ::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
+  background-color: #baac85;
+  color: #16181c;
 }
 
 /* Light theme colors */
 :root {
-  background-color: #edf6f9;
+  background-color: #ebeae2;
 }
 
 /* Dark theme colors */

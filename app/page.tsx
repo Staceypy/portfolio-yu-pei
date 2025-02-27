@@ -1,7 +1,7 @@
 import Image from "next/image";
 import FeaturedProjects from "./components/FeaturedProjects";
-import { socialLinks } from "./config";
-
+import { metaData, socialLinks } from "./config";
+import { SocialLinks } from "./components/SocialLinks";
 export default function Page() {
   // Featured projects data
   const featuredProjects = [
@@ -72,15 +72,22 @@ export default function Page() {
       <div className="prose prose-neutral dark:prose-invert">
         <p>
           Welcome to my portfolio! I'm an emerging{" "}
-          <strong>full stack developer</strong>
+          <strong className="text-contrastL">Full-stack developer</strong>{" "}
           passionate about building thoughtful digital experiences. With a
-          strong foundation in <strong>TypeScript</strong> and{" "}
-          <strong>Python</strong>, I craft solutions using modern frameworks
-          like <strong>React</strong>, <strong>Angular</strong>,{" "}
-          <strong>NestJs</strong>. Currently completing my studies, I combine
-          these technical skills with user-centered design principles to develop
-          applications that are both powerful and intuitive to use
+          strong foundation in{" "}
+          <strong className="text-contrastL">TypeScript</strong> and{" "}
+          <strong className="text-contrastL">Python</strong>, I craft solutions
+          using modern frameworks like{" "}
+          <strong className="text-contrastL">React</strong>,{" "}
+          <strong className="text-contrastL">NextJs</strong>,{" "}
+          <strong className="text-contrastL">NestJs</strong>. Currently
+          completing my studies, I combine these technical skills with
+          user-centered design principles to develop applications that are both
+          powerful and intuitive to use.
         </p>
+      </div>
+      <div>
+        <SocialLinks />
       </div>
 
       <FeaturedProjects projects={featuredProjects} />

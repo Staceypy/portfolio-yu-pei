@@ -6,16 +6,25 @@ module.exports = {
     extend: {
       textColor: ["dark"],
       colors: {
-        backgroundL: "#edf6f9",
-        lightL: "#c7ebea",
-        textL: "#006d77",
-        textNormalL: "#2c3d49",
-        contrastL: "#f28482",
+        backgroundL: "#EFEEEB",
+        lightL: "#fff",
+        textL: "#C8884F",
+        textNormalL: "#16181C",
+        contrastL: "#C8884F",
+        accentL: "#A8A6BA",
         secondaryDarkL: "#84a98c",
 
         lightD: "#edf6f9",
         textD: "#EDF6F9",
         textNormalD: "#E4F1EF",
+        buttonBg: "#BAAC85", // Define your button background color
+        buttonHoverBg: "#C8884F", // Define your hover background color
+        buttonText: "#FFFFFF", // Define your text color
+        buttonHoverText: "#000000",
+      },
+      boxShadow: {
+        "custom-default": "0 4px 15px rgba(0, 0, 0, 0.1)", // Custom default shadow
+        "custom-hover": "0 8px 30px rgba(0, 0, 0, 0.2)", // Custom hover shadow
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
