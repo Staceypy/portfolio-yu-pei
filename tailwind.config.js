@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       textColor: ["dark"],
       colors: {
-        backgroundL: "#EFEEEB",
+        backgroundL: "#F8F9F8", //"#EFEEEB",
         lightL: "#fff",
         textL: "#C8884F",
         textNormalL: "#16181C",
